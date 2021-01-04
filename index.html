@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title>SignUp Page</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+			td{
+				padding:5pt;
+				text-align:center;
+			}
+			input{
+				padding:5pt;
+			}
+			table{
+				width:80%;
+			}
+              
+              ul li{
+              	  color:#2784fc;
+              }
+			ul li a{
+				margin:0 30px;
+				letter-spacing: 3px;
+				font-family: 'Open Sans', sans-serif;
+				 font-size: 1.7rem;
+				  font-weight:bold;
+				  color:#2784fc;
+                text-transform: uppercase;
+			}
+			.navbar-brand{
+				 font-family:  'Open Sans', sans-serif;
+  text-transform: uppercase;
+   color:black;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  font-weight:bold;
+			}
+			.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+	background-color: white;
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+		</style>
+	</head>
+	<body style="background-image: url('image/ecom1.png'); background-size: cover; background-repeat: no-repeat;">
+		<div class="wait overlay">
+	<div class="loader"></div>
+</div>
+	<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:white;">
+		<div class="container-fluid" style="padding:20px;">	
+			<div class="navbar-header" >
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand" style="color:black"> E-COMMERCIAL </a>
+			</div>
+			
+		<div class="collapse navbar-collapse" id="collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" style="color:#0062cc;">Home</a></li>
+				<li><a href="#" style="color:#0062cc;">Product</a></li>
+			</ul>
+			
+			
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<br><br>
+		<center>
+			
+		<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1" style="margin-top:100px;" >
+                    <h3 class="title" style="color:#0062cc;  letter-spacing: 2px; font-weight: bold; ">SIGN IN</h3>
+                    <form action="submit_signin.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="email"  placeholder="Mobile / Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="pass1" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Sign In securely" />
+                        </div>
+                        <div class="form-group">
+                            <a href="./signup.html" class="ForgetPwd">Sign Up for Fresh Account</a>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+		</center>
+	</body>
+</html>
